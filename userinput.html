@@ -1,0 +1,33 @@
+<form>
+    <label for="name">Please enter your name:</label>
+    <input type="text"id="name"/>
+    <button type="button" onclick="greetUser()">Submit
+    </button>
+</form>
+<style>
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    input{
+        padding:5px ;
+        border: 1px solid color(srgb #f88181 green blue);
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    button{
+        background-color: bisque;
+        color: #f88181;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function greetUser(){
+        var userInput = document.getElementById("name").value;
+        alert("Hello," + userInput + "!");
+    }
+</script>
